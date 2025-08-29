@@ -7,3 +7,5 @@ step1: go mod init go-asteroids
 step2: go get github.com/hajimehoshi/ebiten/v2
 
 step3: go run .
+
+git push --force origin main

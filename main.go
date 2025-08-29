@@ -21,6 +21,10 @@ func (g *Game) Layout(outsideWidth, outsideHeight int) (ScreenWidth, ScreenHeigh
 func main() {
 	game := &Game{}
 	game.player = NewPlayer(game)
+
+	ebiten.SetWindowSize(800, 600)
+	ebiten.SetWindowTitle("飞机大战七夕特供版")
+
 	err := ebiten.RunGame(game)
 	if err != nil {
 		panic(err)
